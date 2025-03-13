@@ -24,7 +24,7 @@ The model is trained using accident-related data with the following features:
 
 ## 🛠️ Installation & Setup
 
-1. **Clone the repository**
-   ```bash
+### **1️⃣ Clone the Repository**
+```bash
 git clone https://github.com/Abdelaziz-NaSSeR/Accident-Severity-Prediction-API-FastAPI-.git
 cd Accident-Severity-Prediction-API-FastAPI-
