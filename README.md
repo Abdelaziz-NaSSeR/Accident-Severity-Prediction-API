@@ -1,30 +1,27 @@
-# Accident-Severity-Prediction-API-FastAPI
+# Model Deployment Assignment
 
-A FastAPI-based machine learning model that predicts accident severity based on various input features. The API processes accident-related data and returns severity predictions.
+## Setup
 
-# 🚗 Accident Severity Prediction API (FastAPI)
+1. Clone the repository: git clone https://github.com/Abdelaziz-NaSSeR/Accident-Severity-Prediction-API-FastAPI-.git
+                         cd Accident-Severity-Prediction-API-FastAPI-
+2. Create a virtual environment: `python -m venv venv`.
+3. Activate the virtual environment:
+   - On Windows: `venv\Scripts\activate`
+   - On macOS/Linux: `source venv/bin/activate`
+4. Install dependencies: `pip install -r requirements.txt`.
+5. Run the API: `python api/app.py`.
 
-## 📌 Project Overview
-This project implements a **machine learning model** to predict accident severity based on various input features. The model is deployed using **FastAPI**, allowing users to send requests with accident-related data and receive severity predictions.
+## API Endpoints
 
-## 📂 Dataset Information
-The model is trained using accident-related data with the following features:
-- **Number of Vehicles**
-- **Time (24hr)**
-- **1st Road Class**
-- **Road Surface**
-- **Lighting Conditions**
-- **Weather Conditions**
-- **Casualty Severity**
-- **Sex of Casualty**
-- **Age of Casualty**
-- **Type of Vehicle**
-- **Age Group**
-- **Vehicle Group**
+- `GET /health`: Health check endpoint.
+- `POST /predict`: Prediction endpoint. Expects JSON input with key 'input' and an array of 4 numbers.
 
-## 🛠️ Installation & Setup
+## Model Performance
 
-### **1️⃣ Clone the Repository**
-```bash
-git clone https://github.com/Abdelaziz-NaSSeR/Accident-Severity-Prediction-API-FastAPI-.git
-cd Accident-Severity-Prediction-API-FastAPI-
+- Accuracy: 0.96
+- Precision: 0.95
+- Recall: 0.96
+
+## Testing
+
+Run tests using: `python tests/test_deployment.py`.
